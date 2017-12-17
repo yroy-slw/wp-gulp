@@ -1,0 +1,64 @@
+@import reset
+
+@font-face 
+	font-family: 'Conv_Stanley-Regular'
+	src: url('../fonts/Stanley-Regular.eot')
+	src: local('☺'), url('../fonts/Stanley-Regular.woff') format('woff'), url('../fonts/Stanley-Regular.ttf') format('truetype'), url('../fonts/Stanley-Regular.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+*,
+*:after,
+*:before
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+$full: 100%
+$size: 1000px
+$text: 17px
+$line: 22px
+
+
+$break-desk: 1200px
+$break-tablet: 1024px
+$break-tablet-port: 768px
+$break-phone: 640px
+$break-min-phone: 500px
+
+
+h1 
+	font-size: 23px
+	line-height: 27px
+	color: $blue
+
+a 
+	color: $blue
+	text-decoration: none
+
+.fullScreen
+	width: $full
+	height: $full
+
+.flexJustify
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+#menu-phone 
+	z-index: 1001
+	cursor: pointer
+	display: none
+	@media screen and (max-width: $break-phone)
+		display: block
+
+.show-phone-menu
+	max-height: 50em !important
+
+body, html 
+	width: $full
+	height: 100vh
+	font-size: $text
+	line-height: $line
+		@media screen and (max-width: $break-tablet)
+		
